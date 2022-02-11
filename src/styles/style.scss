@@ -409,6 +409,7 @@ main {
         }
 
         p {
+            width: 50%;
             margin-top: 30px;
         }
 
@@ -600,7 +601,7 @@ main {
             top: 0;
             width: 100%;
             height: 50px;
-            background-color: $dark;
+            background-color: #10111da1;
             backdrop-filter: blur(7px);
             z-index: 4;
         }
@@ -767,6 +768,19 @@ main {
         flex-direction: column;
     }
 
+    .skillsSec {
+    
+        .text {
+    
+            div{
+            }
+    
+            p {
+                width: 70%;
+            }
+        }
+    }
+
     .aboutSec {
 
         .content {
@@ -816,7 +830,7 @@ main {
 @media (max-width: 500px) {
 
     html{
-        font-size: 50%;
+        font-size: 60%;
     }
 
     #menu {
@@ -922,7 +936,7 @@ main {
 
         .text {
             p {
-                width: 70%;
+                width: 90%;
                 margin-top: 30px;
             }
 
