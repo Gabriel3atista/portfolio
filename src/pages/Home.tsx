@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 //Estilo
 import '../styles/style.scss';
 
-import { Video } from '../components/Video';
-
 export function Home() {
 
     useEffect(() =>{
@@ -20,7 +18,6 @@ export function Home() {
 
     return (
         <div id="home" className="section homeSec">
-            <Video />
             <div className="content main text">
                 <h2>Hello, I'm</h2>
                 <h1>Gabriel Batista</h1>
