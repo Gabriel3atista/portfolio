@@ -107,7 +107,7 @@ main {
 }
 
 .modal.open {
-  opacity: 100%;
+  opacity: 1;
   pointer-events: all;
 }
 
@@ -745,7 +745,7 @@ main {
     -webkit-backdrop-filter: blur(7px);
             backdrop-filter: blur(7px);
     overflow: hidden;
-    opacity: 20%;
+    opacity: 0.2;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
   }
@@ -762,7 +762,7 @@ main {
     border-radius: 5px;
   }
   #menu .menuList.active {
-    opacity: 100%;
+    opacity: 1;
     left: 0;
   }
   #menu #social-medias-mobile {
@@ -895,7 +895,7 @@ main {
     top: -55%;
   }
   #menu .menuList.active {
-    opacity: 100%;
+    opacity: 1;
     top: 50%;
   }
   #menu #social-medias-mobile {
