@@ -10,10 +10,13 @@ export function Modal() {
         let imgs: any = document.querySelectorAll('.imgList > .img > img');
         let modalImg: any = document.querySelector('.modalImg');
         let modal: any = document.querySelector('.modal');
+        let body: any = document.querySelector('body');
 
         imgs.forEach((img: any)=>{
 
             img.addEventListener('click', ()=>{
+
+                body.style.overflow = 'hidden';
 
                 modal.classList.add('open');
 
@@ -29,7 +32,9 @@ export function Modal() {
 
             if(e.target.classList.contains('modal')){
 
-                modal.classList.remove('open')
+                modal.classList.remove('open');
+
+                body.style.overflow = 'auto';
 
             }
 
