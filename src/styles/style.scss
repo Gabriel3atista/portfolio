@@ -44,11 +44,11 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #080a1d;
+    background-color: #181b36;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -92,9 +92,8 @@ main {
     transition: .3s ease;
 
     img{
-        width: 500px;
-        max-width: 600px;
-        min-width: 250px;
+        width: 40vw;
+        min-width: 300px;
         z-index: 11;
         border-radius: 10px;
     }
@@ -117,7 +116,8 @@ main {
         background: linear-gradient(rgba(8, 10, 29, 0.7), rgb(8, 10, 29));
         z-index: 1;
     }
-    video {
+
+    iframe {
         position: absolute;
         left: 0;
         overflow: hidden;
@@ -177,7 +177,7 @@ main {
         }
     }
 
-    #social-medias-mobile {
+    .social-medias-mobile {
         display: none;
     }
 }
@@ -557,7 +557,7 @@ main {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 950px) {
 
     .content {
         width: 100%;
@@ -572,13 +572,36 @@ main {
         height: 50px;
         z-index: 4;
 
-        .bgMenu{
+        .bg-menu-active{
+            position: fixed;
+            display: block;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #060816;
+            opacity: 0;
+            transition: .5s ease-in-out;
+            transition-property: opacity, height;
+            transition-delay: .3s, 2ms;
+            z-index: 5;
+        }
+
+        .bg-menu-active.active{
+            transition: .5s ease-in-out;
+            transition-property: opacity, height;
+            transition-delay: 2ms, .3s;
+            height: 100vh;
+            opacity: 1;
+        }
+
+        .bg-menu-blur{
             position: fixed;
             display: block;
             top: 0;
             width: 100%;
             height: 50px;
             background-color: #080a1dd0;
+            backdrop-filter: blur(7px);
             z-index: 4;
         }
 
@@ -590,7 +613,7 @@ main {
             align-items: center;
             width: 20px;
             height: 20px;
-            z-index: 5;
+            z-index: 7;
             cursor: pointer;
 
             .lines{
@@ -635,14 +658,13 @@ main {
 
         .menuList {
             position: fixed;
+            width: 100%;
+            top: 100px;
             display: block;
-            left: -41%;
-            width: 40%;
-            height: 100vh;
-            background-color: #080a1de7;
-            overflow: hidden;
-            opacity: 0.2;
+            opacity: 0;
             transition: .5s ease-in-out;
+            z-index: 6;
+            pointer-events: none;
 
             ul {
                 display: block;
@@ -661,15 +683,23 @@ main {
         }
 
         .menuList.active {
+            top: 130px;
             opacity: 1;
-            left: 0;
+            transition: .5s ease-in-out;
+            transition-property: opacity, top;
+            transition-delay: .3s, .3s;
+            pointer-events: all;
         }
 
-        #social-medias-mobile {
-            position: absolute;
-            bottom: 20px;
+        .social-medias-mobile {
+            position: fixed;
+            bottom: 40px;
             display: block;
             width: 100%;
+            z-index: 6;
+            transition: .2s;
+            transition-delay: 0;
+            opacity: 0;
 
             .iconList {
 
@@ -700,6 +730,22 @@ main {
             }
         }
 
+        .social-medias-mobile.active {
+            transition-delay: .7s;
+            bottom: 20px;
+            opacity: 1;
+        }
+
+    }
+
+    .modal{
+        padding: 0 15px;
+
+        img{
+            width: 70vw;
+            z-index: 11;
+            border-radius: 10px;
+        }
     }
 
     #social-medias{
@@ -774,56 +820,45 @@ main {
     }
 
     #menu {
-
+    
         .menuList {
-            position: fixed;
-            display: block;
-            width: 100%;
-            height: 100vh;
-            left: 0;
-            top: -55%;
-        }
-
-        .menuList.active {
-            opacity: 1;
-            top: 50%;
-        }
-
-        #social-medias-mobile {
-            position: absolute;
-            bottom: 20px;
-            display: block;
-            width: 100%;
-
-            .iconList {
-
-                ul {    
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                li {
-                    color: $darkWhite;
-                    border-radius: 5px;
-                    margin: 0 3px;
-                    padding: 15px;
-
-                    &:hover {
-                        color: white;
-                        background-color: rgba(255, 255, 255, 0.096);
-                    }
-                }
-
-                i {
-                    font-size: 2.2rem;
-                    font-style: normal;
+    
+            li {
+                font-size: 14px;
+    
+                &:hover {
+                    color: white;
+                    background-color: $hoverBackground;
                 }
             }
         }
 
+        .social-medias-mobile {
+            position: fixed;
+            bottom: 40px;
+            display: block;
+            width: 100%;
+            z-index: 6;
+            transition: .2s;
+            transition-delay: 0;
+            opacity: 0;
+
+            .iconList {
+
+                i {
+                    font-size: 25px;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+
+    .modal{
+        padding: 0 10px;
+
+        img{
+            width: 100vw;
+        }
     }
 
     .homeSec{

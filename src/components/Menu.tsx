@@ -19,7 +19,8 @@ export function Menu() {
 
     return (
         <div id="menu">
-            <div className="bgMenu"></div>
+            <div className="bg-menu-blur"></div>
+            <div className={isActive ? "bg-menu-active" : "bg-menu-active active"}></div>
             <div id="hamburguer" onClick={() => {
                 setIsActive(!isActive)
             }}>
@@ -59,7 +60,8 @@ export function Menu() {
                         <li>Contact</li>
                     </a>
                 </ul>
-                <div id="social-medias-mobile">
+            </div>
+            <div className={isActive ? "social-medias-mobile" : "social-medias-mobile active"}>
                     <div className="iconList">
                         <ul>
                             <a className="github" href="https://github.com/Hekez" target="_blank" rel="noreferrer">
@@ -77,7 +79,6 @@ export function Menu() {
                         </ul>
                     </div>
                 </div>
-            </div>
         </div>
     );
 }
