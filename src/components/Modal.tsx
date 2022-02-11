@@ -1,13 +1,7 @@
 //Estilo
 import '../styles/style.scss';
 
-//Imagens
-import luciana from '../assets/images/luciana.png';
-import nikeApp from '../assets/images/nikeApp.png';
-import poupee from '../assets/images/poupee.png';
-import bankme from '../assets/images/bankme.png';
 import { useEffect } from 'react';
-import { useState } from 'react';
 
 export function Modal() {
 

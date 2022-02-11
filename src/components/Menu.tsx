@@ -62,16 +62,16 @@ export function Menu() {
                 <div id="social-medias-mobile">
                     <div className="iconList">
                         <ul>
-                            <a className="github" href="https://github.com/Hekez" target="_blank">
+                            <a className="github" href="https://github.com/Hekez" target="_blank" rel="noreferrer">
                                 <li><i className="fab fa-github"></i></li>
                             </a>
-                            <a className="linkedin" href="https://www.linkedin.com/in/gabriel3atista/" target="_blank">
+                            <a className="linkedin" href="https://www.linkedin.com/in/gabriel3atista/" target="_blank"rel="noreferrer" >
                                 <li><i className="fab fa-linkedin"></i></li>
                             </a>
-                            <a className="instagram" href="https://www.instagram.com/" target="_blank">
+                            <a className="instagram" href="https://www.instagram.com/" target="_blank" rel="noreferrer" >
                                 <li><i className="fab fa-instagram"></i></li>
                             </a>
-                            <a className="whatsapp" href="https://api.whatsapp.com/send?phone=5541984012729" target="_blank">
+                            <a className="whatsapp" href="https://api.whatsapp.com/send?phone=5541984012729" target="_blank"rel="noreferrer" >
                                 <li><i className="fab fa-whatsapp"></i></li>
                             </a>
                         </ul>

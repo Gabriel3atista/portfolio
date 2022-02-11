@@ -9,7 +9,7 @@ export function TogSec() {
         <div className="section">
             <div className="content togSec">
                 <div>
-                    <img className="figma" src={img} alt="Figma Tool image" />
+                    <img className="figma" src={img} alt="Figma Tool" />
                 </div>
                 <div className="text">
                     <div>

@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 
 //Estilo
 import '../styles/style.scss';
