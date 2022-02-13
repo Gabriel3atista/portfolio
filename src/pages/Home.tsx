@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import '../styles/style.scss';
 
 //Imagens
-import bg from '../assets/images/bg.png';
+import bg from '../assets/images/code.jpg';
 
 export function Home() {
 
@@ -21,13 +21,16 @@ export function Home() {
 
     return (
         <div id="home" className="section homeSec">
-            <img src={bg} />
             <div className="content main text">
                 <h2>Hello, I'm</h2>
                 <h1>Gabriel Batista</h1>
                 <h2>or Hekez on the games :)</h2>
                 <p className="p">and this is my space where I share my work and a little bit of my life. I’m a dreamy person, passionate about astronomy, design,
                     games and programming. 🚀</p>
+            </div>
+            <div className="filter"></div>
+            <div className="bg">
+                <img src={bg} />
             </div>
         </div>
     );
