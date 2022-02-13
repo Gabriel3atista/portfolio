@@ -4,6 +4,9 @@ import { useEffect } from 'react';
 //Estilo
 import '../styles/style.scss';
 
+//Imagens
+import bg from '../assets/images/bg.png';
+
 export function Home() {
 
     useEffect(() =>{
@@ -18,6 +21,7 @@ export function Home() {
 
     return (
         <div id="home" className="section homeSec">
+            <img src={bg} />
             <div className="content main text">
                 <h2>Hello, I'm</h2>
                 <h1>Gabriel Batista</h1>

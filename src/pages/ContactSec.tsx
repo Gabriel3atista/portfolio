@@ -2,7 +2,7 @@
 import '../styles/style.scss';
 
 //Assets
-import emoji from '../assets/images/emoji.png';
+import emoji from '../assets/images/emoji.svg';
 import arrow from '../assets/images/arrow.svg';
 
 export function Contact() {
