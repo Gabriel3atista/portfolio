@@ -4,9 +4,6 @@ import { useEffect } from 'react';
 //Estilo
 import '../styles/style.scss';
 
-//Imagens
-import bg from '../assets/images/code.jpg';
-
 export function Home() {
 
     useEffect(() =>{
@@ -29,9 +26,7 @@ export function Home() {
                     games and programming. 🚀</p>
             </div>
             <div className="filter"></div>
-            <div className="bg">
-                <img src={bg} />
-            </div>
+            <div className="bg"></div>
         </div>
     );
 }
