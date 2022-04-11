@@ -16,7 +16,7 @@ export function TogSec() {
                         <img className="titleSvg" src={together} alt="together" />
                         <div className="subtitle">
                             <h2>Let's create <span className="together">together</span></h2>
-                            <p>Do you have the idea of creating a totally modern website? Well, I can help you. Together, we can create an application for your product or services using the best technologies.</p>
+                            <p>Do you have any idea of creating a totally modern website? Well, I can help you. Together, we can create an application for your product or services using the best technologies.</p>
                         </div>
                     </div>
                 </div>
